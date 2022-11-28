@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="mycolord">
+    <ion-title>Miembros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>Miembros del canal (API REST)</h2>
+    <ion-list> 
+      <button ion-item *ngFor="let usuario of usuarios"> 
+        {{usuario.id}} - {{usuario.name}}
+
+      </button>
+    </ion-list>
+</ion-content>

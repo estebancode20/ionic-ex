@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="mycolor">
+    <ion-title>Personajes</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar color="mycolor">
+    <ion-searchbar placeholder="Buscar" animated (ionChange) = "searchCustomer($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row direction="x">
+    <ion-toolbar>
+      <ion-title>Favoritos</ion-title>
+    </ion-toolbar>
+    <ion-avatar *ngFor="let user of characters">
+      <img src="../../assets/customers-img/{{user.image}}">
+    </ion-avatar>
+  </ion-row>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let user of searchedUser; let i = index">
+        <ion-card>
+            <ion-card-subtitle class="ion-margin">
+              <ion-row class="ion-align-items-center">
+              <span class="text-primary">{{i + 1}}. </span>
+              <span>{{user.name}}</span>
+
+              <ion-col align="right">
+                <ion-button (click)="openMenu(user)" fill="clear" float-right>
+                  <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+                </ion-button>
+              </ion-col>
+
+            </ion-row>
+            </ion-card-subtitle>
+
+            <ion-image>
+              <img src="../../assets/customers-img/{{user.image}}">
+            </ion-image>
+            <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+              {{user.description}}
+            </ion-card-title>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <!-- Para hacer la negacion cuando sea false aparezca le ponemos la exclamacion adelante-->
+  <ion-label *ngIf="!permission"> No tienes permisos para ver los clientes </ion-label>
+</ion-content>

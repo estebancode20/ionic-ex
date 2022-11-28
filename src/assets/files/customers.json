@@ -1,0 +1,45 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "name": "Zoro",
+            "state": "No disponible",
+            "description": "Su sueño es convertirse en el mejor espadachín del mundo.",
+            "image": "zoro3.jpg_1464263998.jpg"
+
+        },
+        {
+            "id": 2,
+            "name": "Kaido",
+            "state": "No disponible",
+            "description": "Fue además un aprendiz de los legendarios Piratas de Rocks durante su juventud. Fue el tercer emperador en ser mencionado...",
+            "image": "kaidou.webp"
+
+        },
+        {
+            "id": 3,
+            "name": "Sanji",
+            "state": "No disponible",
+            "description":  "Es el quinto miembro de la tripulación, y el cuarto en unirse",
+            "image": "sanji.jpg"
+
+        },
+        {
+            "id": 4,
+            "name": "Luffy",
+            "state": "No disponible",
+            "description": "Comió una fruta del diablo llamada fruta Gomu Gomu, que le convirtió en un hombre de goma... ",
+            "image": "luffy.webp"
+
+        },
+        {
+            "id": 5,
+            "name": "Barba Blanca",
+            "state": "No disponible",
+            "description": "conocido como Barbablanca (白ひげ Shirohige?), fue el capitán de los Piratas de Barbablanca y el histórico rival de Gol D. Roger.",
+            "image": "barba.jpg"
+
+        }
+
+    ]
+}

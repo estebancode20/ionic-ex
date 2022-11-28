@@ -1,0 +1,57 @@
+ion-toolbar{
+
+    background-color: var(--ion-color-mycolor);
+}
+
+/*clase btn*/
+.btn{
+
+    /*color de fondo*/
+    background-color: var(--ion-color-mycolor-shade);
+    
+    /*color de texto*/
+    color: white;
+
+    /* relleno */
+    padding: 20px 30px 20px 30px;
+
+
+    /* borde */
+    border-radius: 10px;
+
+    /* tamaño de la letra  */
+    font-size: 20px;
+
+}
+
+/* id container*/
+#container{
+    
+    /*alinea el div al centro*/
+    text-align: center;
+
+    position: absolute;
+
+    /* el centrado puede ser con pixeles o con porcentaje */
+
+    /*centrado horizontal*/
+    left: 20px;
+    right: 20px;
+
+    /*centrado verticalmente*/
+    top: 50%;
+
+    transform: translateY(-50%);
+
+
+}
+
+/* clase color blue */
+.colorBlue{
+    color: var(--ion-color-mycolor);
+
+}
+
+.text-primary{
+    color: var(--ion-color-primary);
+}
