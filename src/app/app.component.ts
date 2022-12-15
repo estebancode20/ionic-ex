@@ -9,7 +9,8 @@ export class AppComponent {
     { title: 'Home', url: '/home', icon: 'planet' },
     { title: 'Personajes', url: '/customers', icon: 'people' },
     { title: 'Peleas', url: '/cities', icon: 'location' },
-    { title: 'Miembros', url: '/miembros', icon: 'star' }
+    { title: 'Miembros', url: '/miembros', icon: 'star' },
+    { title: 'Geolocalizacion', url: '/geo', icon: 'locate'}
     
   ];
   

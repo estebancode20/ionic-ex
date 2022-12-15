@@ -48,7 +48,11 @@ const routes: Routes = [
   {
     path: 'fhome',
     loadChildren: () => import('./fhome/fhome.module').then( m => m.FhomePageModule)
+  },  {
+    path: 'geo',
+    loadChildren: () => import('./geo/geo.module').then( m => m.GeoPageModule)
   }
+
 
 ];
 

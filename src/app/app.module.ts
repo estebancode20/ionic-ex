@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { Storage } from '@ionic/storage';
+import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 
 
 /* Importamos el HttpClientModule */
@@ -21,7 +22,7 @@ import { CustomersPage } from './customers/customers.page';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, Proveedor1Provider, Storage],
+  providers: [ Geolocation,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, Proveedor1Provider, Storage],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
